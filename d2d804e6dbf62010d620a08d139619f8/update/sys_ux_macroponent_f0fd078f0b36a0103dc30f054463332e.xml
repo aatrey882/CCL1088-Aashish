@@ -295,11 +295,8 @@
           }
         },
         "layout" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "message" : "horizontal",
-            "comment" : ""
-          }
+          "type" : "JSON_LITERAL",
+          "value" : "horizontal"
         },
         "data" : {
           "type" : "DATA_OUTPUT_BINDING",
@@ -308,11 +305,8 @@
           }
         },
         "cardHeightHorizontal" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "message" : "md",
-            "comment" : ""
-          }
+          "type" : "JSON_LITERAL",
+          "value" : "md"
         },
         "maxVisibleCardsHorizontal" : {
           "type" : "JSON_LITERAL",
@@ -371,11 +365,8 @@
           }
         },
         "layout" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "message" : "horizontal",
-            "comment" : ""
-          }
+          "type" : "JSON_LITERAL",
+          "value" : "horizontal"
         },
         "data" : {
           "type" : "DATA_OUTPUT_BINDING",
@@ -384,11 +375,8 @@
           }
         },
         "cardHeightHorizontal" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "message" : "md",
-            "comment" : ""
-          }
+          "type" : "JSON_LITERAL",
+          "value" : "md"
         },
         "maxVisibleCardsHorizontal" : {
           "type" : "JSON_LITERAL",
@@ -447,11 +435,8 @@
           }
         },
         "layout" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "message" : "horizontal",
-            "comment" : ""
-          }
+          "type" : "JSON_LITERAL",
+          "value" : "horizontal"
         },
         "data" : {
           "type" : "DATA_OUTPUT_BINDING",
@@ -460,11 +445,8 @@
           }
         },
         "cardHeightHorizontal" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "message" : "md",
-            "comment" : ""
-          }
+          "type" : "JSON_LITERAL",
+          "value" : "md"
         },
         "maxVisibleCardsHorizontal" : {
           "type" : "JSON_LITERAL",
@@ -746,6 +728,13 @@
         "inUiBuilder" : {
           "type" : "JSON_LITERAL",
           "value" : true
+        },
+        "userSession" : {
+          "type" : "CONTEXT_BINDING",
+          "binding" : {
+            "address" : [ "user" ],
+            "category" : "session"
+          }
         }
       },
       "eventMappings" : [ ],
@@ -1192,6 +1181,13 @@
         "inUiBuilder" : {
           "type" : "JSON_LITERAL",
           "value" : true
+        },
+        "userSession" : {
+          "type" : "CONTEXT_BINDING",
+          "binding" : {
+            "address" : [ "user" ],
+            "category" : "session"
+          }
         }
       },
       "eventMappings" : [ ],
@@ -1983,6 +1979,53 @@
     }
   },
   "readEvaluationMode" : "EAGER"
+}, {
+  "definition" : {
+    "id" : "b997a84053021010cbc2ddeeff7b1228",
+    "type" : "COMPOSITE"
+  },
+  "elementId" : "featured_post",
+  "elementLabel" : "Featured post",
+  "eventMappings" : [ ],
+  "inputValues" : {
+    "table" : {
+      "type" : "JSON_LITERAL",
+      "value" : "x_snc_blogging_post"
+    },
+    "encodedQuery" : {
+      "type" : "JSON_LITERAL",
+      "value" : "state=published^featured=true"
+    },
+    "returnFields" : {
+      "type" : "JSON_LITERAL",
+      "value" : "title,sys_id,author,publish_date"
+    },
+    "orderBy" : {
+      "type" : "JSON_LITERAL",
+      "value" : "publish_date"
+    },
+    "sortType" : {
+      "type" : "JSON_LITERAL",
+      "value" : "desc"
+    },
+    "limit" : {
+      "type" : "JSON_LITERAL",
+      "value" : "1"
+    },
+    "offset" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "queryCategory" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "returnFieldMetadata" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    }
+  },
+  "readEvaluationMode" : "EAGER"
 } ]</data>
         <dispatched_events>f4fd078f4336a0108ac0030503ecea26,38fd078f6836a01048a235ef751d6a26</dispatched_events>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
@@ -2290,7 +2333,7 @@
   "readOnly" : false,
   "selectable" : false
 } ]</props>
-        <required_translations>[{"message":"Track your requests","comment":""},{"message":"Cancel","comment":""},{"message":"Hello,","comment":""},{"message":"Updated Articles","comment":""},{"message":"Get the help you need","comment":""},{"message":"Reject request","comment":""},{"message":"Reject","comment":""},{"message":"horizontal","comment":""},{"message":"md","comment":""},{"message":"No content to display.","comment":""},{"message":"Search","comment":""},{"message":"Complete your tasks","comment":""},{"message":"Approve request","comment":""},{"message":"Approve","comment":""}]</required_translations>
+        <required_translations>[{"message":"Reject","comment":""},{"message":"Track your requests","comment":""},{"message":"No content to display.","comment":""},{"message":"Cancel","comment":""},{"message":"Hello,","comment":""},{"message":"Search","comment":""},{"message":"Updated Articles","comment":""},{"message":"Get the help you need","comment":""},{"message":"Complete your tasks","comment":""},{"message":"Approve request","comment":""},{"message":"Approve","comment":""},{"message":"Reject request","comment":""}]</required_translations>
         <root_component/>
         <root_component_config>{ }</root_component_config>
         <root_component_definition/>
@@ -2366,13 +2409,13 @@
         <sys_created_by>system</sys_created_by>
         <sys_created_on>2021-03-14 18:55:04</sys_created_on>
         <sys_id>f0fd078f0b36a0103dc30f054463332e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Landing Page</sys_name>
         <sys_package display_value="Blogging" source="x_snc_blogging">d2d804e6dbf62010d620a08d139619f8</sys_package>
         <sys_policy/>
         <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
         <sys_update_name>sys_ux_macroponent_f0fd078f0b36a0103dc30f054463332e</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2021-03-14 18:55:13</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-16 14:45:31</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>
