@@ -33,13 +33,13 @@
         <image_width/>
         <size_bytes>12910</size_bytes>
         <size_compressed>5492</size_compressed>
-        <state>pending</state>
+        <state>available</state>
         <sys_created_by>system</sys_created_by>
         <sys_created_on>2021-03-14 18:55:03</sys_created_on>
         <sys_id>b0fd078f5936a01099ce19d5ae2a211b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2021-03-14 18:55:03</sys_updated_on>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>guest</sys_updated_by>
+        <sys_updated_on>2021-05-22 14:28:26</sys_updated_on>
         <table_name>ZZ_YYdb_image</table_name>
         <table_sys_id>f0fd078fea36a01003c8f05b2309011b</table_sys_id>
     </sys_attachment>

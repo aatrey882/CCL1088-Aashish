@@ -17,7 +17,7 @@
         <sys_update_name>m2m_app_config_theme_f0fd078fa136a0108b011081233fec2d</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
         <sys_updated_on>2021-03-14 18:55:04</sys_updated_on>
-        <theme display_value="Light Theme">34fd078f6a36a010bdf369b61337c91b</theme>
+        <theme display_value="Blogging Post Theme">34fd078f6a36a010bdf369b61337c91b</theme>
         <ux_app_configuration display_value="Blogging Config">68fdc38fdb36a010d620a08d139619f2</ux_app_configuration>
     </m2m_app_config_theme>
 </record_update>
